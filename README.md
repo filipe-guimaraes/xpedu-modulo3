@@ -18,6 +18,13 @@ Receita do Terraform para criação de uma ambiente simples na AWS
 ## Lambda Functions
 
 ### Start Instance
+Inicia instâncias EC2 basedas na tag "Desliga"
+
 ### Stop Instance
+Interrompe instâncias EC2 basedas na tag "Desliga"
+
 ### Modify Instance
+Modifica o tipo de instância baseado no valor de entrada passado por meio de um JSON
+
 ### Lambda API
+Função construída em Python que processa transações(Query String Parameters) que chegam através do API Gateway REST
