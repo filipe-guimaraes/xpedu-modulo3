@@ -1,17 +1,13 @@
 # Modulo 3 - Bootcamp Profissional AWS
 
-Codigos utilizados nas aulas práticas do ódulo 3 do Bootcamp Profissional AWS
+Codigos utilizados nas aulas práticas do módulo 3 do Bootcamp Profissional AWS
 
+## AWS CLI
+Para instalar o profile switcher (awsp):
+https://github.com/johnnyopao/awsp
 
 ## AWS SDK
 Codigo de exemplo para interagir com a AWS através do SDK do Python
-
-
-
-You can also leave out the `--profile PROFILE_NAME` param to set your `default` credentials
-
-Refer to this doc for more information
-https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html
 
 ## Cloud Formation
 Template do Cloud Formation para criação de uma ambiente simples na AWS
