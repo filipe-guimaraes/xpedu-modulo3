@@ -1,7 +1,3 @@
-// Demonstration video can be found at: https://youtu.be/_gJyK1-NGq8
-
-// ModifyEC2InstanceType
-
 const AWS = require('aws-sdk');
 
 exports.handler = (event, context, callback) => {
