@@ -29,12 +29,12 @@ Modifica o tipo de instância baseado no valor de entrada passado por meio de um
 ### Lambda API
 Função construída em Python que processa transações(Query String Parameters) que chegam através do API Gateway REST
 
-##AWS Amplify
+## AWS Amplify
 Link da demonstração oficial da AWS:
 https://aws.amazon.com/pt/getting-started/hands-on/host-static-website/
 
-##AWS AppSync
+## AWS AppSync
 
 
-##AWS Device Farm
+## AWS Device Farm
 
