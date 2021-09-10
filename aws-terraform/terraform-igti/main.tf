@@ -26,6 +26,14 @@ resource "aws_security_group_rule" "app_server_sg_inbound_80" {
   security_group_id = aws_security_group.app_server_sg.id
 }
 
+resource "aws_security_group_rule" "app_server_sg_inbound_3306" {
+  type              = "ingress"
+  from_port         = 3306
+  to_port           = 3306
+  protocol          = "tcp"
+  cidr_blocks       = ["0.0.0.0/0"]
+  security_group_id = aws_security_group.app_server_sg.id
+}
 resource "aws_security_group_rule" "app_server_sg_inbound_443" {
   type              = "ingress"
   from_port         = 443
@@ -56,10 +64,10 @@ resource "aws_security_group_rule" "app_server_sg_outbound" {
 
 resource "aws_instance" "app_server" {
   ami           = "ami-09e67e426f25ce0d7"
-  instance_type = "t3a.small"
+  instance_type = "t3a.medium"
   vpc_security_group_ids = [ "${aws_security_group.app_server_sg.id}" ]
   tags = {
-    Name = "ExampleAppServerInstance",
+    Name = "Instancia EC2 - Sem Modulo",
     Change = "True",
     Desliga = "True"
   }

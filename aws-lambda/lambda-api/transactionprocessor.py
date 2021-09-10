@@ -28,4 +28,3 @@ def lambda_handler(event, context):
 
 	#4. Return the response object
 	return responseObject
-

@@ -17,7 +17,7 @@ resource "aws_instance" "app_server" {
   instance_type = "t3a.small"
   vpc_security_group_ids = [ "${module.security_group_app_server.app_server_sg_id}" ]
   tags = {
-    Name = "ExampleAppServerInstance",
+    Name = "Instancia EC2 - Com Modulo",
     Change = "True",
     Desliga = "True"
   }

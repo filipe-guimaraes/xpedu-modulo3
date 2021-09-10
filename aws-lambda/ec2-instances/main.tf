@@ -23,7 +23,7 @@ resource "aws_security_group_rule" "app_server_sg_inbound_80" {
   to_port           = 0
   protocol          = "tcp"
   cidr_blocks       = ["0.0.0.0/0"]
-  security_group_id = aws_security_group.app_server_sg.id
+  security_group_id = aws_security_group.teste_lambda_instances.id
 }
 
 ############ Outbound Rules ############
@@ -33,7 +33,7 @@ resource "aws_security_group_rule" "app_server_sg_outbound" {
   to_port           = 0
   protocol          = "-1"
   cidr_blocks       = ["0.0.0.0/0"]
-  security_group_id = aws_security_group.app_server_sg.id
+  security_group_id = aws_security_group.teste_lambda_instances.id
 }
 
 resource "aws_instance" "teste_lambda_01" {
@@ -62,7 +62,6 @@ resource "aws_instance" "teste_lambda_03" {
   vpc_security_group_ids = [ "${aws_security_group.teste_lambda_instances.id}" ]
   tags = {
     Name = "Teste Lambda 03",
-    Desliga = "True"
   }
 }
 
@@ -72,6 +71,5 @@ resource "aws_instance" "teste_lambda_04" {
   vpc_security_group_ids = [ "${aws_security_group.teste_lambda_instances.id}" ]
   tags = {
     Name = "Teste Lambda 04",
-    Desliga = "True"
   }
 }

@@ -1,0 +1,12 @@
+{
+    "body": "eyJ0ZXN0IjoiYm9keSJ9",
+    "resource": "/{proxy+}",
+    "path": "/path/to/resource",
+    "httpMethod": "GET",
+    "isBase64Encoded": true,
+    "queryStringParameters": {
+      "transactionId": "5",
+      "type": "PURCHASE",
+      "amount": "500"
+    }
+}

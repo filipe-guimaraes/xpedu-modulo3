@@ -1,5 +1,5 @@
 resource "aws_security_group" "app_server_sg" {
-  name    = "app_server_sg"
+  name    = "app_server_sg_no_module"
 }
 
 ############ Inbound Rules ############
