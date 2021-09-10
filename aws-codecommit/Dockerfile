@@ -4,7 +4,7 @@ RUN apt-get update -y
 RUN apt-get install -y apache2
 
 # Install apache and write hello world message
-RUN echo "Helloo Cloud Gurus!!!! This web page is running in a Docker container!" > /var/www/index.html
+RUN echo "Esta é a sua aplicação local em Docker :)" > /var/www/index.html
 
 
 # Configure apache
@@ -14,6 +14,6 @@ ENV APACHE_RUN_USER www-data
 ENV APACHE_RUN_GROUP www-data
 ENV APACHE_LOG_DIR /var/log/apache2
 
-EXPOSE 80
+EXPOSE 8080
 
 CMD ["/usr/sbin/apache2", "-D",  "FOREGROUND"]
