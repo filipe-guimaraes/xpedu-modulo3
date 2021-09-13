@@ -1,16 +1,10 @@
 #Instalar o CodeDeploy na sua instância EC2 Ubuntu
 
-sudo yum update
-sudo yum install ruby
-sudo yum install wget
+sudo apt update
+sudo apt install ruby
+sudo apt install wget
 cd /home/ubuntu
 wget https://aws-codedeploy-us-east-1.s3.us-east-1.amazonaws.com/latest/install
 chmod +x ./install
 sudo ./install auto
 sudo service codedeploy-agent status
-
-
-#Create your application.zip and load it into CodeDeploy:
-
-aws deploy create-application --application-name mywebapp
-aws deploy push --application-name mywebapp --s3-location s3://<MY_BUCKET_NAME>/webapp.zip --ignore-hidden-files
