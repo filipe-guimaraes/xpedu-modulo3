@@ -29,6 +29,9 @@ Modifica o tipo de instância baseado no valor de entrada passado por meio de um
 ### Lambda API
 Função construída em Python que processa transações(Query String Parameters) que chegam através do API Gateway REST
 
+## AWS Code Deploy
+Baixe o arquivo .zip e faca upload para o seu bucket do S3, de acordo com as instrucoes da aula prática
+
 ## AWS Amplify
 Link da demonstração oficial da AWS:
 https://aws.amazon.com/pt/getting-started/hands-on/host-static-website/
