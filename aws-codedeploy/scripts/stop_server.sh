@@ -1,3 +1,3 @@
 #!/bin/bash
-service httpd stop
+service apache2 stop
 
