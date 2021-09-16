@@ -36,8 +36,6 @@ Baixe o arquivo .zip e faca upload para o seu bucket do S3, de acordo com as ins
 Link da demonstração oficial da AWS:
 https://aws.amazon.com/pt/getting-started/hands-on/host-static-website/
 
-## AWS AppSync
-
-
 ## AWS Device Farm
-
+Link para baixar o arquivo .apk do aplicativo android
+https://github.com/mehtank/androminion/releases
